@@ -1,3 +1,4 @@
+#include "InferenceEngine.h"
 #pragma once
 
 #include <onnxruntime_cxx_api.h>
@@ -49,7 +50,8 @@ public:
 	cv::Mat Render(const cv::Mat& img, const std::vector<ResultNode>& results);
 
 private:
-	inline bool WarmUpModel() { return true;/* nothing todo */ };
+	inline bool WarmUpModel() { return true;/* nothing todo */ }
+	
 
 private:
 

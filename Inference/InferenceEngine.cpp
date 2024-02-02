@@ -1,4 +1,5 @@
 #include "InferenceEngine.h"
+#include "InferenceEngine.h"
 #include "ModelParser.h"
 #include "Misc.h"
 #include "Filesystem.h"
@@ -46,6 +47,8 @@ std::vector<ResultNode> InferenceEngine::Infer(const cv::Mat& img)
 
     return result;
 }
+
+
 
 bool InferenceEngine::CreateSession(const std::string& modelPath)
 {
