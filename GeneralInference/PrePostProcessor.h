@@ -7,6 +7,8 @@
 
 #include "GeneralStruct.h"
 
+
+
 namespace GeneralInference
 { 
 
@@ -14,7 +16,7 @@ namespace GeneralInference
 class PrePostProcessor
 {
 public:
-	PrePostProcessor();
+	PrePostProcessor(std::shared_ptr<Model>& model_io_info);
 	~PrePostProcessor();
 
 public:
@@ -29,8 +31,13 @@ public:
 	/// 
 	/// </summary>
 	/// <param name="out_tensor"></param>
+	/// <param name="conf_threshold"></param>
+	/// <param name="iou_threshold"></param>
 	/// <returns></returns>
-	virtual std::vector<BoundingBox> Postprocess(const std::vector<Ort::Value>& out_tensor) = 0;
+	virtual std::vector<BoundingBox> Postprocess(const std::vector<Ort::Value>& out_tensor, float conf_threshold = 0.5, float iou_threshold = 0.45) = 0;
+	
+protected:
+	std::shared_ptr<Model> m_model_io_info;
 };
 
 }

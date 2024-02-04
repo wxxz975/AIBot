@@ -34,10 +34,7 @@ namespace GeneralInference
 		}
 	}*/
 
-	std::shared_ptr<Model> ModelParser::ParseOutput(Ort::Session* session)
-	{
-		return std::shared_ptr<Model>();
-	}
+	
 
 	std::vector<std::string> ModelParser::ParseLabels(Ort::Session* session, const std::string& label_key)
 	{

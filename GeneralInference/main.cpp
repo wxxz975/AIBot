@@ -1,27 +1,39 @@
 #include <iostream>
 #include <regex>
 
+#include "InferenceEngine.h"
+
 
 
 int main(int argc, char* argv[])
 {
-    std::string data = "{0: 'Gun', 1: 'Knife', 2: 'Pliers', 3: 'Scissors', 4: 'Wrench'}";
-
-    // 正则表达式模式
-    std::regex pattern("'([^']*)'");
-
-    // 迭代器对正则表达式进行匹配
-    std::sregex_iterator it(data.begin(), data.end(), pattern);
-    std::sregex_iterator end;
-
-    while (it != end) {
-        std::smatch match = *it;
-        std::string value = match[1].str();
-        std::cout << "Value: " << value << std::endl;
-        ++it;
+    /*
+    if (argc != 2) {
+        std::cout << "Usage:" << argv[0] << " <model_path>\n";
+        return -1;
     }
 
+    std::string model_path = argv[1];
+    */
+    std::string model_path = "e:\\workspace\\weights\\yolov5\\yolov5n.onnx";
+   
+    GeneralInference::InferenceEngine engine = GeneralInference::InferenceEngine(model_path);
+   
+    
+   
+    cv::VideoCapture cap(0);
+    cv::Mat frame;
+    while (true)
+    {
+        cap >> frame;
+        std::vector<BoundingBox> boxes = engine.Infer(frame);
+        
+        cv::Mat rendered = engine.RenderBox(frame, boxes);
+
+        cv::imshow("test", rendered);
+        cv::waitKey(10);
+    }
+    
 
     return 0;
-
 }

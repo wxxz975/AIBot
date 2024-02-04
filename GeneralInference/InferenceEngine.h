@@ -37,6 +37,15 @@ namespace GeneralInference
 		/// <returns></returns>
 		std::vector<BoundingBox> Infer(const std::string& image_path);
 
+
+		/// <summary>
+		/// Draw the detection results onto the image and return the drawn image
+		/// </summary>
+		/// <param name="image"></param>
+		/// <param name="result"></param>
+		/// <returns></returns>
+		cv::Mat RenderBox(const cv::Mat& image, const std::vector<BoundingBox>& result);
+
 	private:
 
 		std::vector<Ort::Value> Infer(const std::vector<Ort::Value>& input_tensor);
@@ -78,9 +87,11 @@ namespace GeneralInference
 		std::shared_ptr<Model> m_model_info;
 
 
-		Ort::Session m_ort_session{nullptr};
-		Ort::Env m_ort_env;
+		std::shared_ptr<Ort::Session>  m_ort_session;
+		std::shared_ptr<Ort::Env> m_ort_env;
+
 		std::string m_ort_env_name;
+		std::wstring m_wmodel_path;
 
 		float confidence_threshold = 0.5;
 		float iou_threshold = 0.5;
