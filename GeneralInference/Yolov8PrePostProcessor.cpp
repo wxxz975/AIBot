@@ -54,11 +54,11 @@ namespace GeneralInference {
  		std::vector<BoundingBox> result;
 		// output only one Dimensions
 		const float* raw_ptr = output_tensor.at(0).GetTensorData<float>();
-		//std::size_t count = output_tensor.at(0).GetTensorTypeAndShapeInfo().GetElementCount();
 		std::vector<int64_t> output_shape = output_tensor.at(0).GetTensorTypeAndShapeInfo().GetShape();
 		
-		std::size_t num_channels = output_shape.at(1);	// cols
-		std::size_t num_anchors = output_shape.at(2);	// rows
+		// [1, 84, 8400]
+		std::size_t num_channels = output_shape.at(1);	// 84
+		std::size_t num_anchors = output_shape.at(2);	// 8400
 		std::size_t num_classes = num_channels - YOLOV8_OUTBOX_ELEMENT_COUNT;
 
 		cv::Size newShape = cv::Size(num_anchors, num_channels);
