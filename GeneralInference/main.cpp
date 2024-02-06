@@ -15,12 +15,10 @@ int main(int argc, char* argv[])
 
     std::string model_path = argv[1];
     */
-    std::string model_path = "e:\\workspace\\weights\\yolov5\\yolov5n.onnx";
+    std::string model_path = "e:\\workspace\\weights\\yolov8\\yolov8n.onnx";
    
-    GeneralInference::InferenceEngine engine = GeneralInference::InferenceEngine(model_path);
-   
+    GeneralInference::InferenceEngine engine = GeneralInference::InferenceEngine(model_path, GeneralInference::M_YOLOV8);
     
-   
     cv::VideoCapture cap(0);
     cv::Mat frame;
     while (true)

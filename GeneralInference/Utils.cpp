@@ -174,6 +174,15 @@ namespace GeneralInference
         return { maxIndex, maxValue };
     }
 
+    std::pair<std::size_t, float> FindMaxIndexValue(float* data, std::size_t num_class)
+    {
+        auto maxElement = std::max_element(data, data + num_class);
+        std::size_t maxIndex = std::distance(data, maxElement);
+        float maxValue = *maxElement;
+
+        return { maxIndex, maxValue };
+    }
+
     cv::Mat Convert2RGB(const cv::Mat& image)
     {
         cv::Mat out;

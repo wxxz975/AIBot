@@ -39,7 +39,8 @@ namespace GeneralInference
 		Ort::MemoryInfo m_ort_memory_info{ nullptr };
 		cv::Size m_original_shape{};
 
-		std::vector<float> m_blob;
+		//std::vector<float> m_blob;
+		cv::Mat m_blob;
 	};
 
 }

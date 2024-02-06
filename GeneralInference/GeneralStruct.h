@@ -25,7 +25,7 @@ struct BoundingBox
 typedef std::shared_ptr<BoundingBox> PBoundingBox;
 
 
-struct alignas(float) YoloRawResult
+struct alignas(float) Yolov5RawResult
 {
     float cx;       // center x
     float cy;       // center y
@@ -34,13 +34,25 @@ struct alignas(float) YoloRawResult
     float box_conf; // box confidence
 	// class confidence
 };
+typedef Yolov5RawResult* pYolov5RawResult;
 
 
-typedef YoloRawResult* pYoloRawResult;
+struct alignas(float) Yolov8RawResult
+{
+	float cx;	// center x
+	float cy;	// center y
+	float w;	// width
+	float h;	// height
+	// class confidence
+};
+
+
 
 // There are 5 elements in one box, include cx, cy, width, height, box_conf, other is class confidence
-#define YOLOV5_OUTBOX_ELEMENT_COUNT sizeof(YoloRawResult)/sizeof(float)
+#define YOLOV5_OUTBOX_ELEMENT_COUNT sizeof(Yolov5RawResult)/sizeof(float)
 
+//#define YOLOV8_OUTBOX_ELEMENT_COUNT sizeof(Yolov8RawResult)/sizeof(std::int32_t)
+#define YOLOV8_OUTBOX_ELEMENT_COUNT sizeof(Yolov8RawResult)/sizeof(float)
 
 /// <summary>
 	/// Store input and output names and dimension information

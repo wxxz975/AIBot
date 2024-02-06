@@ -35,7 +35,6 @@ namespace GeneralInference{
 		// Convert image color channel from hwc to chw
 		HWC2CHW(float_image, m_blob);
 		
-
 		result.push_back(
 			Ort::Value::CreateTensor<float>(m_ort_memory_info,
 				m_blob.data(), m_blob.size(),
@@ -73,7 +72,7 @@ namespace GeneralInference{
 
 		for (auto iter = output.begin(); iter != output.begin() + count; iter += size_bbox)
 		{
-			const YoloRawResult* bbox = reinterpret_cast<const YoloRawResult*>(&(*iter));
+			const Yolov5RawResult* bbox = reinterpret_cast<const Yolov5RawResult*>(&(*iter));
 			float boxConf = bbox->box_conf; // box confidence
 			auto start_class_conf = iter + YOLOV5_OUTBOX_ELEMENT_COUNT;
 

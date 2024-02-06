@@ -2,7 +2,9 @@
 #include <string>
 #include <codecvt>
 #include <vector>
+#include <numeric>
 #include <opencv2/opencv.hpp>
+
 
 #include "GeneralStruct.h"
 
@@ -31,11 +33,14 @@ namespace GeneralInference
 
 	template<class T>
 	inline T Product(const std::vector<T>& values) {
+		return std::accumulate(values.begin(), values.end(), 1, std::multiplies<T>());
+		/*
 		T result = 1;
 		for (const T& value : values)
 			result *= value;
 
 		return result;
+		*/
 	}
 
 
@@ -88,6 +93,8 @@ namespace GeneralInference
 	/// <returns></returns>
 	std::pair<std::size_t, float> FindMaxIndexValue(std::vector<float>::iterator& iter, std::size_t num_class);
 	
+
+	std::pair<std::size_t, float> FindMaxIndexValue(float* data, std::size_t num_class);
 
 	/// <summary>
 	/// Convert gray, bgr, bgra type image to rgb image
