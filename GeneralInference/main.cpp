@@ -24,8 +24,15 @@ int main(int argc, char* argv[])
     while (true)
     {
         cap >> frame;
+        auto t1 = std::chrono::high_resolution_clock::now();
+       
         std::vector<BoundingBox> boxes = engine.Infer(frame);
         
+        auto t2 = std::chrono::high_resolution_clock::now();
+        std::cout << "Total Infer time:"
+            << std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count()
+            << "ms\n";
+
         cv::Mat rendered = engine.RenderBox(frame, boxes);
 
         cv::imshow("test", rendered);

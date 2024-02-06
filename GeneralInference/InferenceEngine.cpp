@@ -7,6 +7,13 @@
 
 #include "Utils.h"
 
+//#define BENCHMARK
+
+#ifdef BENCHMARK
+#include <chrono>
+#endif // BENCHMARK
+
+
 namespace GeneralInference
 {
 
@@ -31,9 +38,26 @@ namespace GeneralInference
 
 	std::vector<BoundingBox> InferenceEngine::Infer(const cv::Mat& image)
 	{
+#ifdef BENCHMARK
+		auto t1 = std::chrono::high_resolution_clock::now();
+#endif
 		std::vector<Ort::Value> input_tensor = m_pre_post_processor->Preprocess(image);
 
+#ifdef BENCHMARK
+		auto t2 = std::chrono::high_resolution_clock::now();
+		std::cout << "Preprocess time:" << 
+			std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count()
+			<< "ms\n";
+#endif
 		std::vector<Ort::Value> output_tensor = Infer(input_tensor);
+
+#ifdef BENCHMARK
+		t1 = std::chrono::high_resolution_clock::now();
+
+		std::cout << "Inference time:" <<
+			std::chrono::duration_cast<std::chrono::milliseconds>(t1 - t2).count()
+			<< "ms\n";
+#endif
 
 		return m_pre_post_processor->Postprocess(output_tensor);
 	}
