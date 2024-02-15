@@ -135,7 +135,6 @@
     <ClCompile Include="InferenceEngine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ModelParser.cpp" />
-    <ClCompile Include="PrePostProcessor.cpp" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Yolov5PrePostProcessor.cpp" />
     <ClCompile Include="Yolov8PrePostProcessor.cpp" />
