@@ -30,7 +30,7 @@ inline DLL_EXPORT bool Initialize(int width, int height)
 }
 
 
-inline DLL_EXPORT  bool CaptureNext(cv::Mat&img)
+inline DLL_EXPORT  bool CaptureNext(cv::Mat& img)
 {
     if (capturer.CaptureNext()) {
         img = cv::Mat(capturer.Latest.Height, capturer.Latest.Width, CV_8UC4, capturer.Latest.Buf.data());

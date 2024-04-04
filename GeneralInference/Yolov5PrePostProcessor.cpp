@@ -40,7 +40,6 @@ namespace GeneralInference{
 		*/
 		result.push_back(
 			Ort::Value::CreateTensor<float>(m_ort_memory_info,
-				//m_blob.data(), m_blob.size(),
 				m_blob.ptr<float>(),
 				m_blob.total(),
 				input_tensor_shape.data(), input_tensor_shape.size())

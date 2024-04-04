@@ -1,13 +1,9 @@
 #include "Export.h"
 
+
+
+
 /*
-	负责图像截取、改为动态链接库形式
-	目前使用dxgi + directX的方式进行抓取， 这个方式可以在抓取的时候设置等待的时间。
-*/
-
-
-
-
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
 {
     switch (ul_reason_for_call)
@@ -25,4 +21,32 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
     }
 
     return TRUE;
+}*/
+#include <chrono>
+int main(int argc, char* argv[])
+{
+   
+    capturer.Initialize(640, 640);
+
+    /*
+        就是这里太慢了
+    */
+    cv::Mat image;
+    std::size_t total_capture = 10000000;
+    std::size_t success_cnt = 0;
+    
+    auto start = std::chrono::steady_clock::now();
+    for (std::size_t idx = 0; idx < total_capture; ++idx) {
+        if (capturer.CaptureNext())
+            success_cnt++;
+    }
+
+    auto end = std::chrono::steady_clock::now();
+    auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+    std::cout << "total times:" << total_capture << " success:" << success_cnt 
+        << " total time:" << ms
+        << "ms " << " fps:" << 1000 /(ms / success_cnt) 
+        << "\n";
+
+
 }

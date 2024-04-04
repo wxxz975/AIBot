@@ -73,6 +73,8 @@ bool InitDllAPI()
 
 int main(int argc, char* argv[])
 {
+
+
 	MouseEv mouse;
 	ScreenShot shotter;
 	Inference engine;

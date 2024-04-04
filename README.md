@@ -1,15 +1,43 @@
-### Universal AIMBOT for fps Video game
+**This project is free and open-source. I'm just a regular student, spending my free time on this project. So, if you like what we've done so far and want to see it grow, please support us!**
+**⭐ Give a star**
 
-### 分为四个子模块
+## AIBot
+AIBot is an AI-based multi-functional game aim assistant written in C ++, mainly for people who have difficulty aiming
 
-## 一、推理模块(Inference: onnx+yolov5+...)
-AI模型保存为onnx格式，采用onnxruntime 进行推理，目前使用的推理模型是yolov5
 
-## 二、鼠标移动模块(MouseEvent: GHub Driver)
-解决调用什么接口进行移动。目前使用的是老版本的GHub驱动，可以达到伪装控制鼠标移动
+- Call mouse_move functions through Logi GHub
+- Supports both Yolo5 and Yolov8 AI algorithms, For the Yolov8 pre-trained model, you can use the free model in [Aimmy](https://github.com/Babyhamsta/Aimmy/tree/master/models)
+- dxgi+directX Capture Screen
 
-## 三、桌面截取模块(ScreenCapture: dxgi+directX)
-桌面截取使用dxgi截图速度非常快，但是这种截图会存在截取不到的问题、所以每次获取之后需要判断是否存在图像数据
 
-## 四、移动算法模块(MoveAdaptor: PID)
-解决鼠标如何移动、移动多少
+
+### Disclaimer
+  
+AIBot is a hobby project and should be treated as such. This project is intended for learning purposes only, but I acknowledge the possibility that this project can be used for malicious purposes such as to gain an unfair advantage in multiplayer shooter games. I do not condone video game cheating in any regard. If you are using AIBot to cheat, consider reading the following disclaimer.  
+  
+Cheating in video games often stems from deeper psychological needs, such as low self-esteem and a desire for control. If you find yourself resorting to cheats, it's worth taking a moment to reflect on why.  
+
+Cheating can provide a temporary sense of control and accomplishment, but it ultimately undermines your genuine self-worth. True satisfaction comes from overcoming challenges and developing skills through honest effort.  
+
+Overcoming cheating habits may require addressing underlying psychological issues. Talking to a therapist or counselor can help you develop healthier coping mechanisms and cultivate a more positive gaming experience.  
+
+
+
+### Copyright
+```
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+
+### Reference
