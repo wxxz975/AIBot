@@ -1,0 +1,3 @@
+/home/wxxz/workspace/AIBot/build/CMakeFiles/AIBot.dir
+/home/wxxz/workspace/AIBot/build/CMakeFiles/edit_cache.dir
+/home/wxxz/workspace/AIBot/build/CMakeFiles/rebuild_cache.dir

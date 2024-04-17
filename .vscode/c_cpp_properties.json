@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/wxxz/libs/onnxruntime/onnxruntime-linux-x64-1.17.1/include/**",
+                "/usr/include/**",
+                "/usr/include/opencv4/**",
+                "/usr/lib/gcc/x86_64-linux-gnu/11/**"
+            ],
+            "defines": [],
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
