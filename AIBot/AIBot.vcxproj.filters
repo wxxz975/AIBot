@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Inference">
+      <UniqueIdentifier>{6fc08677-6c48-4267-8329-4bb42db98852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{4b2bd906-cb0f-4410-8954-9ff9715f17db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{106e3882-0477-4fca-89c0-e6efeeb1da12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{1e1d96cd-95d9-4c53-8a6a-ac0a24cac340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MoveAdaptor">
+      <UniqueIdentifier>{ce755f75-98be-4876-8d74-d03eae314332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScreenCapture">
+      <UniqueIdentifier>{3b595e43-7e01-495f-9b22-acfc5cc125cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inference\CudaUtil">
+      <UniqueIdentifier>{a0bd7114-dbea-4a7a-8bd2-0405561c771d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inference\Processor">
+      <UniqueIdentifier>{f39bd74c-a063-45cf-9349-603f0da5650d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\ImGui">
+      <UniqueIdentifier>{0e83339f-37aa-4423-bcfe-6854b6d68ca8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Filesystem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PID.cpp">
+      <Filter>MoveAdaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="ProportionalTrackingAlgorithm.cpp">
+      <Filter>MoveAdaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="PIDTrackingAlgorithm.cpp">
+      <Filter>MoveAdaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsMouseController.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="LogiMouseController.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="DesktopTextureCapturer.cpp">
+      <Filter>ScreenCapture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Filesystem.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="YOLOv8Postprocessor.cuh">
+      <Filter>Inference\Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="YOLOv8Preprocessor.cuh">
+      <Filter>Inference\Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscations.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="skCrypter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PID.h">
+      <Filter>MoveAdaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackingAlgorithm .h">
+      <Filter>MoveAdaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="ProportionalTrackingAlgorithm.h">
+      <Filter>MoveAdaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="PIDTrackingAlgorithm.h">
+      <Filter>MoveAdaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="IMouseController .h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsMouseController.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="LogiMouseController.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="DesktopTextureCapturer.h">
+      <Filter>ScreenCapture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="YOLOv8Postprocessor.cu">
+      <Filter>Inference\Processor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="YOLOv8Preprocessor.cu">
+      <Filter>Inference\Processor</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

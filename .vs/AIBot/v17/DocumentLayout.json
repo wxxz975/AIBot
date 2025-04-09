@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\VS\\new\\AIBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\DesktopTextureCapturer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\DesktopTextureCapturer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\Obfuscations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\skCrypter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\skCrypter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\WindowsMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\WindowsMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\LogiMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\LogiMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\IMouseController .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\TrackingAlgorithm .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\TrackingAlgorithm .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\main.cpp",
+              "RelativeDocumentMoniker": "AIBot\\main.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\main.cpp",
+              "RelativeToolTip": "AIBot\\main.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvzEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-08T13:03:51.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Obfuscations.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h",
+              "RelativeDocumentMoniker": "AIBot\\Obfuscations.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h",
+              "RelativeToolTip": "AIBot\\Obfuscations.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T13:03:31.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "skCrypter.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\skCrypter.h",
+              "RelativeDocumentMoniker": "AIBot\\skCrypter.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\skCrypter.h",
+              "RelativeToolTip": "AIBot\\skCrypter.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T13:03:22.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WindowsMouseController.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp",
+              "RelativeDocumentMoniker": "AIBot\\WindowsMouseController.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp",
+              "RelativeToolTip": "AIBot\\WindowsMouseController.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-08T12:10:12.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WindowsMouseController.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.h",
+              "RelativeDocumentMoniker": "AIBot\\WindowsMouseController.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.h",
+              "RelativeToolTip": "AIBot\\WindowsMouseController.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T12:10:09.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LogiMouseController.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.cpp",
+              "RelativeDocumentMoniker": "AIBot\\LogiMouseController.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.cpp",
+              "RelativeToolTip": "AIBot\\LogiMouseController.cpp",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwC8AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-08T12:10:00.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LogiMouseController.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.h",
+              "RelativeDocumentMoniker": "AIBot\\LogiMouseController.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.h",
+              "RelativeToolTip": "AIBot\\LogiMouseController.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvyEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T12:09:57.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DesktopTextureCapturer.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.cpp",
+              "RelativeDocumentMoniker": "AIBot\\DesktopTextureCapturer.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.cpp",
+              "RelativeToolTip": "AIBot\\DesktopTextureCapturer.cpp",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAUwKYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-08T12:07:48.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DesktopTextureCapturer.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.h",
+              "RelativeDocumentMoniker": "AIBot\\DesktopTextureCapturer.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.h",
+              "RelativeToolTip": "AIBot\\DesktopTextureCapturer.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T11:57:41.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IMouseController .h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h",
+              "RelativeDocumentMoniker": "AIBot\\IMouseController .h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h",
+              "RelativeToolTip": "AIBot\\IMouseController .h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T11:57:58.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TrackingAlgorithm .h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TrackingAlgorithm .h",
+              "RelativeDocumentMoniker": "AIBot\\TrackingAlgorithm .h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\TrackingAlgorithm .h",
+              "RelativeToolTip": "AIBot\\TrackingAlgorithm .h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T12:09:22.908Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+E:\VS\new\AIBot\AIBot\DesktopTextureCapturer.cpp;E:\VS\new\AIBot\AIBot\x64\Release\DesktopTextureCapturer.obj
+E:\VS\new\AIBot\AIBot\Filesystem.cpp;E:\VS\new\AIBot\AIBot\x64\Release\Filesystem.obj
+E:\VS\new\AIBot\AIBot\LogiMouseController.cpp;E:\VS\new\AIBot\AIBot\x64\Release\LogiMouseController.obj
+E:\VS\new\AIBot\AIBot\main.cpp;E:\VS\new\AIBot\AIBot\x64\Release\main.obj
+E:\VS\new\AIBot\AIBot\PID.cpp;E:\VS\new\AIBot\AIBot\x64\Release\PID.obj
+E:\VS\new\AIBot\AIBot\PIDTrackingAlgorithm.cpp;E:\VS\new\AIBot\AIBot\x64\Release\PIDTrackingAlgorithm.obj
+E:\VS\new\AIBot\AIBot\ProportionalTrackingAlgorithm.cpp;E:\VS\new\AIBot\AIBot\x64\Release\ProportionalTrackingAlgorithm.obj
+E:\VS\new\AIBot\AIBot\WindowsMouseController.cpp;E:\VS\new\AIBot\AIBot\x64\Release\WindowsMouseController.obj
