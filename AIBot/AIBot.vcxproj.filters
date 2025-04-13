@@ -56,16 +56,16 @@
     <ClCompile Include="DesktopTextureCapturer.cpp">
       <Filter>ScreenCapture</Filter>
     </ClCompile>
+    <ClCompile Include="TextureMapper.cpp">
+      <Filter>ScreenCapture</Filter>
+    </ClCompile>
+    <ClCompile Include="TensorRTInferenceEngine .cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Filesystem.h">
       <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="YOLOv8Postprocessor.cuh">
-      <Filter>Inference\Processor</Filter>
-    </ClInclude>
-    <ClInclude Include="YOLOv8Preprocessor.cuh">
-      <Filter>Inference\Processor</Filter>
     </ClInclude>
     <ClInclude Include="Obfuscations.h">
       <Filter>Common</Filter>
@@ -100,9 +100,24 @@
     <ClInclude Include="DesktopTextureCapturer.h">
       <Filter>ScreenCapture</Filter>
     </ClInclude>
+    <ClInclude Include="TextureMapper.h">
+      <Filter>ScreenCapture</Filter>
+    </ClInclude>
+    <ClInclude Include="TensorRTInferenceEngine .h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaDebug.hpp">
+      <Filter>Inference\CudaUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2D.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="YOLOv8Postprocessor.cu">
+      <Filter>Inference\Processor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="YOLOv8Postprocessor.cuh">
       <Filter>Inference\Processor</Filter>
     </CudaCompile>
     <CudaCompile Include="YOLOv8Preprocessor.cu">

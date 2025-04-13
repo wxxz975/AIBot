@@ -13,9 +13,7 @@ bool DesktopTextureCapturer::Initialize(const std::string& windowTitle)
         }
     }
 
-    if (!InitArgs()) {
-        return false;
-    }
+   
 
     // Initialize DirectX
     HRESULT hr = S_OK;
@@ -74,6 +72,10 @@ bool DesktopTextureCapturer::Initialize(const std::string& windowTitle)
 
     dxgiOutput->GetDesc(&m_outputDesc);
 
+    if (!InitArgs()) {
+        return false;
+    }
+
     // QI for Output 1
     IDXGIOutput1* dxgiOutput1 = nullptr;
     hr = dxgiOutput->QueryInterface(__uuidof(dxgiOutput1), (void**)&dxgiOutput1);
@@ -93,27 +95,63 @@ bool DesktopTextureCapturer::Initialize(const std::string& windowTitle)
         return false;
     }
 
+    // Create a persistent GPU texture
+    D3D11_TEXTURE2D_DESC desc = {};
+    desc.Width = m_outputDesc.DesktopCoordinates.right - m_outputDesc.DesktopCoordinates.left;
+    desc.Height = m_outputDesc.DesktopCoordinates.bottom - m_outputDesc.DesktopCoordinates.top;
+    desc.MipLevels = 1;
+    desc.ArraySize = 1;
+    desc.Format = DXGI_FORMAT_B8G8R8A8_UNORM;
+    desc.SampleDesc.Count = 1;
+    desc.Usage = D3D11_USAGE_DEFAULT;
+    desc.BindFlags = D3D11_BIND_SHADER_RESOURCE;
+    desc.MiscFlags = D3D11_RESOURCE_MISC_SHARED;
+
+    hr = m_d3dDevice->CreateTexture2D(&desc, nullptr, &m_pPersistentTexture);
+    if (FAILED(hr)) {
+        std::cerr << "Failed to create persistent texture, HRESULT=" << hr << std::endl;
+        return false;
+    }
+
     return true;
 }
 
 void DesktopTextureCapturer::Close()
 {
-    if (m_deskDupl)
+    if (m_pPersistentTexture) {
+        m_pPersistentTexture->Release();
+        m_pPersistentTexture = nullptr;
+    }
+
+    if (m_deskDupl) {
         m_deskDupl->Release();
+        m_deskDupl = nullptr;
+    }
 
-    if (m_d3dDeviceContext)
+    if (m_d3dDeviceContext) {
         m_d3dDeviceContext->Release();
+        m_d3dDeviceContext = nullptr;
+    }
 
-    if (m_d3dDevice)
+    if (m_d3dDevice) {
         m_d3dDevice->Release();
-
-    m_deskDupl = nullptr;
-    m_d3dDeviceContext = nullptr;
-    m_d3dDevice = nullptr;
+        m_d3dDevice = nullptr;
+    }
+    
     m_haveFrameLock = false;
 }
 
-TextureCaptureStatus DesktopTextureCapturer::CaptureNext(TextureDesc* pTextureDesc)
+ID3D11Texture2D* DesktopTextureCapturer::GetTheTexture()
+{
+    return m_pPersistentTexture;
+}
+
+const TextureDesc& DesktopTextureCapturer::GetTheTextureDesc()
+{
+    return m_TextureDesc;
+}
+
+TextureCaptureStatus DesktopTextureCapturer::CaptureNext()
 {
     if (!m_deskDupl)
         return TextureCaptureStatus::DXGI_INIT_FAILED;
@@ -162,19 +200,10 @@ TextureCaptureStatus DesktopTextureCapturer::CaptureNext(TextureDesc* pTextureDe
         return TextureCaptureStatus::DUPLICATION_FAILED;
     }
 
-    // 获取纹理描述
-    D3D11_TEXTURE2D_DESC texDesc;
-    gpuTex->GetDesc(&texDesc);
+    // Copy the captured texture to the persistent texture
+    m_d3dDeviceContext->CopyResource(m_pPersistentTexture, gpuTex);
 
-    // 填充描述结构
-    if(pTextureDesc) {
-        pTextureDesc->pTexture = gpuTex;
-        pTextureDesc->format = texDesc.Format;
-        pTextureDesc->width = texDesc.Width;
-        pTextureDesc->height = texDesc.Height;
-        pTextureDesc->rowPitch = texDesc.Width * 4; // 假设为32位RGBA格式
-        pTextureDesc->memLayout = TextureMemLayout::HWC;
-    }
+    gpuTex->Release();
 
     return TextureCaptureStatus::OK;
 }
@@ -192,6 +221,12 @@ bool DesktopTextureCapturer::InitArgs()
         // 如果未指定窗口，则使用整个屏幕
         m_rect = { 0, 0, m_outputDesc.DesktopCoordinates.right, m_outputDesc.DesktopCoordinates.bottom };
     }
+   
+    m_TextureDesc.width = m_outputDesc.DesktopCoordinates.right - m_outputDesc.DesktopCoordinates.left;
+    m_TextureDesc.height = m_outputDesc.DesktopCoordinates.bottom - m_outputDesc.DesktopCoordinates.top;
+    m_TextureDesc.memLayout = TextureMemLayout::HWC;
+    m_TextureDesc.format = DXGI_FORMAT_B8G8R8A8_UNORM;
+    m_TextureDesc.rowPitch = 4 * m_TextureDesc.width;
 
     return true;
 }

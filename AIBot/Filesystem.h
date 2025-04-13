@@ -3,20 +3,14 @@
 #include <vector>
 #include <string>
 
+
+
 namespace fs = std::filesystem;
 typedef std::string Path;
 
 
 namespace IFilesystem
 {
-
-    /// <summary>
-    /// 获取这个argv0 这个可执行文件所在的文件夹
-    /// </summary>
-    /// <param name="argv0">这个main中传入的argv[0]</param>
-    /// <returns></returns>
-    Path GetExecutablePath(const std::string& argv0);
-
     /// @brief 获取当前可执行文件的路径
     /// @return 返回这个路径
     Path GetCurrentPath();
@@ -103,4 +97,31 @@ namespace IFilesystem
     /// <param name="pattern">模式</param>
     /// <returns></returns>
     bool RegexMatch(const std::string& string, const std::string& pattern);
+
+
+    /// @brief 读取文件数据， 仅限小量数据
+    /// @param filepath 
+    /// @param outdata 
+    /// @return 
+    bool ReadFile(const std::string& filepath, std::vector<std::uint8_t>& outdata);
+
+    /// @brief 写入二进制文件
+    /// @param filepath 写入路径
+    /// @param data 写入的数据
+    /// @return 返回是否成功
+    bool WriteFile(const std::string& filepath, const std::vector<std::uint8_t>& data);
+
+    bool DeleteFile(const std::string& filepath);
+
+    /// <summary>
+    /// 获取文件的后缀
+    /// </summary>
+    /// <param name="filepath">文件路径或者文件名均可</param>
+    /// <returns></returns>
+    std::string GetSuffix(const Path& filepath);
+
+    bool Compare(const std::string& str1, const std::string& str2, bool caseSensitive = true);
+
+
+    std::vector<std::string> ListDir(const std::string& path);
 };

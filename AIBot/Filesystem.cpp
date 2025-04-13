@@ -1,15 +1,10 @@
-#include "Filesystem.h"
-
+﻿#include "Filesystem.h"
 #include <regex>
-
+#include <fstream>
+#include <sstream>
 
 namespace IFilesystem
 {
-    Path GetExecutablePath(const std::string& argv0)
-    {
-        auto executable_path = fs::canonical(fs::path(argv0));
-        return executable_path.parent_path().string();
-    }
     Path GetCurrentPath()
     {
         return fs::current_path().string();
@@ -50,7 +45,7 @@ namespace IFilesystem
     }
 
 
-    ///����ƥ��jpg��׺���ļ� "\\.jpg$"
+    ///±ÈÈçÆ¥Åäjpgºó×ºµÄÎÄ¼þ "\\.jpg$"
     std::vector<std::string> GetFilesBySuffix(const Path& path, const std::string& extPat)
     {
         std::vector<std::string> result;
@@ -134,5 +129,84 @@ namespace IFilesystem
         std::regex pat(pattern);
         return std::regex_match(string, pat);
     }
+    bool ReadFile(const std::string& filepath, std::vector<std::uint8_t>& outdata)
+    {
+        if (!IsExist(filepath)) return false;
+        std::ifstream fp(filepath, std::ios::in | std::ios::binary);
 
+        fp.seekg(0, std::ios::end);
+        std::streamsize filesize = fp.tellg();
+        fp.seekg(0, std::ios::beg);
+
+        outdata.resize(filesize);
+
+        fp.read(reinterpret_cast<char*>(outdata.data()), filesize);
+
+        return true;
+    }
+
+    bool WriteFile(const std::string& filepath, const std::vector<std::uint8_t>& data)
+    {
+        if (data.empty()) return true;
+
+        std::ofstream fp(filepath, std::ios::out | std::ios::binary);
+
+        fp.write(reinterpret_cast<const char*>(data.data()), data.size());
+
+        return true;
+    }
+
+    bool DeleteFile(const std::string& filepath)
+    {
+        return fs::remove(filepath);
+    }
+
+
+    std::string GetSuffix(const Path& filepath)
+    {
+        size_t lastDotPos = filepath.find_last_of(".");
+        if (lastDotPos == std::string::npos) return ""; // 没有点号
+
+        size_t lastSlashPos = filepath.find_last_of("/\\");
+        // 如果点号在最后一个路径分隔符之前，说明没有扩展名
+        if (lastSlashPos != std::string::npos && lastSlashPos > lastDotPos) return "";
+
+        return filepath.substr(lastDotPos + 1);
+    }
+
+    bool Compare(const std::string& str1, const std::string& str2, bool caseSensitive)
+    {
+        if (str1.size() != str2.size()) {
+            return false;
+        }
+
+        if (caseSensitive) {
+            return str1 == str2;
+        }
+        else {
+            // 大小写不敏感比较
+            return std::equal(str1.begin(), str1.end(), str2.begin(), str2.end(),
+                [](char c1, char c2) {
+                    return std::tolower(static_cast<unsigned char>(c1)) ==
+                        std::tolower(static_cast<unsigned char>(c2));
+                });
+        }
+    }
+
+    std::vector<std::string> ListDir(const std::string& path)
+    {
+        std::vector<std::string> entries;
+
+        try {
+            // 遍历目录内容
+            for (const auto& entry : fs::directory_iterator(path)) {
+                entries.push_back(entry.path().string());  // 获取完整路径并添加到 vector 中
+            }
+        }
+        catch (const fs::filesystem_error& e) {
+            //std::cerr << "Error accessing path: " << e.what() << '\n';
+        }
+
+        return entries;
+    }
 };

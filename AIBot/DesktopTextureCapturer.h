@@ -20,13 +20,11 @@ enum class TextureMemLayout {
 };
 
 typedef struct TextureDesc {
-	ID3D11Texture2D* pTexture = nullptr;
 	DXGI_FORMAT format = DXGI_FORMAT_UNKNOWN;
 	int width = 0;
 	int height = 0;
 	int rowPitch = 0;
 	TextureMemLayout memLayout = TextureMemLayout::HWC;
-
 }TextureDesc, *pTextureDesc;
 
 
@@ -45,8 +43,11 @@ public:
 	bool Initialize(const std::string& title = "");
 	void  Close();
 
+	ID3D11Texture2D* GetTheTexture();
+	const TextureDesc& GetTheTextureDesc();
 	
-	TextureCaptureStatus CaptureNext(TextureDesc* pTextureDesc);
+	TextureCaptureStatus CaptureNext();
+
 
 private:
 	bool InitArgs();
@@ -60,5 +61,9 @@ private:
 
 	RECT m_rect = { 0 };
 	HWND m_targetWindow = nullptr;
+
+	ID3D11Texture2D* m_pPersistentTexture = nullptr;
+
+	TextureDesc m_TextureDesc;
 };
 
