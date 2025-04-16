@@ -9,12 +9,7 @@
 #include "Matrix2D.hpp"
 
 
-/// <summary>
-/// éæå¤§æŠ‘åˆ¶
-/// </summary>
-/// <param name="detections"></param>
-/// <param name="iouThreshold"></param>
-/// <returns></returns>
+/*
 static std::vector<DetectionBox> NonMaxSuppression(const std::vector<DetectionBox>& detections, float iouThreshold) {
     std::vector<DetectionBox> nmsDetections;
     std::vector<DetectionBox> dets = detections;
@@ -32,28 +27,29 @@ struct ImageShape
     int width;
     int height;
 };
-
+*/
 
 /*
-    è§£æåŸå§‹æ•°æ®ï¼Œå¹¶è¿‡æ»¤ä½ç½®ä¿¡åº¦çš„æ£€æµ‹æ¡†
-    d_rawdataï¼šåŸå§‹æ•°æ®
-    d_outdataï¼šè¾“å‡ºæ•°æ®
-    maxOutObjï¼šæœ€å¤§è¾“å‡ºæ£€æµ‹æ¡†æ•°é‡, è¡¨ç¤ºçš„æ˜¯d_outdataè¾“å‡ºæ•°æ®è¾“å‡ºå†…å­˜ä¸­æœ€å¤§å¯ä»¥å­˜å‚¨çš„æ£€æµ‹æ¡†æ•°é‡
-    numChannelsï¼šé€šé“æ•°é‡
-    numClassesï¼šç±»åˆ«æ•°é‡
-    confThresholdï¼šç½®ä¿¡åº¦é˜ˆå€¼
+    ½âÎöÔ­Ê¼Êı¾İ£¬²¢¹ıÂËµÍÖÃĞÅ¶ÈµÄ¼ì²â¿ò
+    d_rawdata£ºÔ­Ê¼Êı¾İ
+    d_outdata£ºÊä³öÊı¾İ
+    maxOutObj£º×î´óÊä³ö¼ì²â¿òÊıÁ¿, ±íÊ¾µÄÊÇd_outdataÊä³öÊı¾İÊä³öÄÚ´æÖĞ×î´ó¿ÉÒÔ´æ´¢µÄ¼ì²â¿òÊıÁ¿
+    numChannels£ºÍ¨µÀÊıÁ¿
+    numClasses£ºÀà±ğÊıÁ¿
+    confThreshold£ºÖÃĞÅ¶ÈãĞÖµ
 */
+/*
 __device__ void YOLOv8ParseRawDataKernel(const float* d_rawdata, float* d_outdata, int maxOutObj, int numChannels, int numClasses, float confThreshold)
 {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx >= numChannels || idx >= maxOutObj) return;
 
-    Matrix2D<float, true> rawPtr(d_rawdata, numClasses + YOLOV8OutputElement, numChannels); // [1, 84, 8400]ï¼Œ  84 = 80 + 4
+    Matrix2D<float, true> rawPtr(d_rawdata, numClasses + YOLOV8OutputElement, numChannels); // [1, 84, 8400]£¬  84 = 80 + 4
 
     float cx = rawPtr(idx, 0);
     float cy = rawPtr(idx, 1);
-    float w  = rawPtr(idx, 2);
-    float h  = rawPtr(idx, 3);
+    float w = rawPtr(idx, 2);
+    float h = rawPtr(idx, 3);
 
     int classIdx = -1;
     float maxClassScore = 0.f;
@@ -90,7 +86,7 @@ __global__ void YOLOv8ParseRawData(const float* d_rawdata, float* d_outdata, int
     int numThreads = 1024;
     int numBlocks = (numChannels + numThreads - 1) / numThreads;
 
-    YOLOv8ParseRawDataKernel<<<numBlocks, numThreads>>>(d_rawdata, d_outdata, maxOutObj, numChannels, numClasses, confThreshold);
+    YOLOv8ParseRawDataKernel << <numBlocks, numThreads >> > (d_rawdata, d_outdata, maxOutObj, numChannels, numClasses, confThreshold);
 }
 
 
@@ -98,37 +94,37 @@ __global__ void YOLOv8ParseRawData(const float* d_rawdata, float* d_outdata, int
 __device__ void NMSBatchKernel(const float* d_rawdata, float iouThreshold)
 {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
-    int maxObj = (int)d_rawdata[0]; // è§£æå‡ºçš„æœ€å¤§çš„æ£€æµ‹æ¡†æ•°é‡
+    int maxObj = (int)d_rawdata[0]; // ½âÎö³öµÄ×î´óµÄ¼ì²â¿òÊıÁ¿
     if (idx >= maxObj) return;
 
-    
-    auto cur = reinterpret_cast<const DetectionBox*>(&d_rawdata[1 + idx * RAW_YOLOV8_OUTPUTS_ELEMENT]);
-    if(cur->suppressed) return;
 
-    
+    auto cur = reinterpret_cast<const DetectionBox*>(&d_rawdata[1 + idx * RAW_YOLOV8_OUTPUTS_ELEMENT]);
+    if (cur->suppressed) return;
+
+
 
 }
 
 
-__device__ void RestoreCoordinateKernel(DetectionBox* d_boxes, int numBoxes, 
+__device__ void RestoreCoordinateKernel(DetectionBox* d_boxes, int numBoxes,
     int origWidth, int origHeight, int inputWidth, int inputHeight) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx >= numBoxes) return;
 
     DetectionBox& box = d_boxes[idx];
 
-    // è®¡ç®—ç¼©æ”¾æ¯”ä¾‹å’Œå¡«å……åç§»
+    // ¼ÆËãËõ·Å±ÈÀıºÍÌî³äÆ«ÒÆ
     float scale = __min(static_cast<float>(inputWidth) / origWidth, static_cast<float>(inputHeight) / origHeight);
     float pad_x = (inputWidth - origWidth * scale) / 2.0f;
     float pad_y = (inputHeight - origHeight * scale) / 2.0f;
 
-    // å»é™¤å¡«å……å¹¶è¿˜åŸæ¯”ä¾‹
+    // È¥³ıÌî³ä²¢»¹Ô­±ÈÀı
     box.x1 = (box.x1 - pad_x) / scale;
     box.y1 = (box.y1 - pad_y) / scale;
     box.x2 = (box.x2 - pad_x) / scale;
     box.y2 = (box.y2 - pad_y) / scale;
 
-    // è£å‰ªåˆ°å›¾åƒè¾¹ç•Œ
+    // ²Ã¼ôµ½Í¼Ïñ±ß½ç
     box.x1 = fmaxf(0.0f, fminf(static_cast<float>(origWidth), box.x1));
     box.y1 = fmaxf(0.0f, fminf(static_cast<float>(origHeight), box.y1));
     box.x2 = fmaxf(0.0f, fminf(static_cast<float>(origWidth), box.x2));
@@ -136,11 +132,12 @@ __device__ void RestoreCoordinateKernel(DetectionBox* d_boxes, int numBoxes,
 }
 
 
-__global__ void RestoreCoordinate(DetectionBox* d_boxes, int numBoxes, 
+__global__ void RestoreCoordinate(DetectionBox* d_boxes, int numBoxes,
     int origWidth, int origHeight, int inputWidth, int inputHeight) {
     int numThreads = 1024;
     int numBlocks = (numBoxes + numThreads - 1) / numThreads;
 
-    RestoreCoordinateKernel<<<numBlocks, numThreads>>>(d_boxes, numBoxes, origWidth, origHeight, inputWidth, inputHeight);
+    RestoreCoordinateKernel << <numBlocks, numThreads >> > (d_boxes, numBoxes, origWidth, origHeight, inputWidth, inputHeight);
 }
 
+*/

@@ -7,6 +7,7 @@
 #include <opencv2/opencv.hpp>
 
 #include "WindowsMouseController.h"
+#include "ArduinoMouseController.h"
 #include "DesktopTextureCapturer.h"
 #include "TextureMapper.h"
 
@@ -14,12 +15,24 @@
 
 void test_mouse_control()
 {
-	WindowsMouseController controller;
+	/*WindowsMouseController controller;
 	for (int idx = 0; idx < 100; ++idx) {
 		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 		controller.MoveMouse(10, 5);
 	}
+	*/
+	ArduinoMouseController controller;
+	if (!controller.Initialize("\\\\.\\COM3")) {
+		std::cout << "Failed to initialize the deivce!\n";
+		return;
+	}
+	for (int idx = 0; idx < 1000; ++idx) {
+		std::this_thread::sleep_for(std::chrono::milliseconds(10));
+		controller.MoveMouse(10, 10);
+	}
 }
+
+
 
 /*
 	目前可以实现将这个截取到的数据通过映射到cuda内存，fps基本上300+
@@ -121,10 +134,10 @@ void test_screen_capture()
 int main(int argc, char* argv[])
 {
 	// test mouse control 
-	// test_mouse_control();
+	test_mouse_control();
 
 
 	// test screen capture
-	test_screen_capture();
+	//test_screen_capture();
 	return 0;
 }

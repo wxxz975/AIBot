@@ -1,3 +1,4 @@
+#pragma once
 #include <cstdint>
 #include <string>
 
@@ -19,12 +20,11 @@ public:
      * Move the mouse pointer
      * @param delta_x    Relative movement on the X-axis (unit: pixels)
      * @param delta_y    Relative movement on the Y-axis (unit: pixels)
-     * @param mode       Movement mode (default is relative movement)
      * @return           MouseError error code
-     * @return           std::string detailed error message (optional)
      */
     virtual MouseMoveStatus MoveMouse(
         int delta_x, int delta_y
     ) = 0;
-
 };
+
+// TODO: arudino control the mouse

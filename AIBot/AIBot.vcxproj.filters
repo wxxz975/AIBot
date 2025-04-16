@@ -62,6 +62,9 @@
     <ClCompile Include="TensorRTInferenceEngine .cpp">
       <Filter>Inference</Filter>
     </ClCompile>
+    <ClCompile Include="ArduinoMouseController.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Filesystem.h">
@@ -112,15 +115,24 @@
     <ClInclude Include="Matrix2D.hpp">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="YOLOv8Preprocessor.cuh">
+      <Filter>Inference\Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="YOLOv8Postprocessor.cuh">
+      <Filter>Inference\Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="ArduinoMouseController.h">
+      <Filter>Control</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <CudaCompile Include="YOLOv8Preprocessor.cu">
+      <Filter>Inference\Processor</Filter>
+    </CudaCompile>
     <CudaCompile Include="YOLOv8Postprocessor.cu">
       <Filter>Inference\Processor</Filter>
     </CudaCompile>
-    <CudaCompile Include="YOLOv8Postprocessor.cuh">
-      <Filter>Inference\Processor</Filter>
-    </CudaCompile>
-    <CudaCompile Include="YOLOv8Preprocessor.cu">
+    <CudaCompile Include="YOLOv8Definitions.cuh">
       <Filter>Inference\Processor</Filter>
     </CudaCompile>
   </ItemGroup>
