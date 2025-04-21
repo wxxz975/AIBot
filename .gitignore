@@ -42,3 +42,5 @@ Makefile
 /Release_x86
 # 其他
 *.DS_Store
+
+/AIBot/x64
