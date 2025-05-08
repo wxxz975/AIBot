@@ -30,7 +30,6 @@ struct DetectionBox {
 #define YOLOV8_MAX_NUM_OBJ 1000
 
 
-
 struct RawYOLOv8Outputs
 {
     float center_x;

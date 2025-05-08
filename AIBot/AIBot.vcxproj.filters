@@ -65,6 +65,9 @@
     <ClCompile Include="ArduinoMouseController.cpp">
       <Filter>Control</Filter>
     </ClCompile>
+    <ClCompile Include="InferenceContext.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Filesystem.h">
@@ -124,6 +127,13 @@
     <ClInclude Include="ArduinoMouseController.h">
       <Filter>Control</Filter>
     </ClInclude>
+    <ClInclude Include="OffsetUtils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="InferenceContext.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBotConfig.h" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="YOLOv8Preprocessor.cu">

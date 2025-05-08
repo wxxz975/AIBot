@@ -11,6 +11,11 @@ typedef struct IOInfomation
     std::string name;
     nvinfer1::Dims dims;
     uint32_t total_bytes;   // 总共占用的字节数，= 1 * 3 * 640 * 640 * element_size
+    void* d_ptr;
+    void* h_ptr;
+
+    IOInfomation() : 
+        total_bytes(0), d_ptr(nullptr), h_ptr(nullptr), dims({}) {};
 }IOInfo;
 
 typedef struct BoundingBox
@@ -24,21 +29,29 @@ typedef struct BoundingBox
 class TensorRTInferenceEngine
 {
 public:
-    // 构造函数：加载序列化引擎并初始化执行上下文和CUDA流
+    
     TensorRTInferenceEngine();
 
-    // 析构函数：释放TensorRT资源与CUDA流
+    
     ~TensorRTInferenceEngine();
 
     bool Initialize(const std::string& enginePath);
+    
+    void Infer(const std::vector<void*>& d_inputPtrs);
 
-    // 推理接口（适用于单个输入、单个输出的简单场景）
-    // inputCudaPtr：设备端输入数据指针
-    // outputCudaPtr：设备端输出缓冲区指针（需要预先分配好足够空间）
-    // batchSize：推理的批量大小
-    // inputName和outputName允许根据不同模型进行灵活绑定
-    void Infer(void* inputCudaPtr);
 
+
+
+private:
+    
+    void CopyInputsToCuda(const std::vector<void*>& h_ptrs = std::vector<void*>());
+
+    void CopyOutputsToCpu(const std::vector<void*> & h_ptrs = std::vector<void*>());
+
+private:
+    void MakePipe();
+
+    void InferInternal();
 private:
     // Logger用于TensorRT输出调试信息，可根据需要扩展日志细节
     class Logger : public nvinfer1::ILogger

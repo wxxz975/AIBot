@@ -3,16 +3,80 @@
   "WorkspaceRootPath": "E:\\VS\\new\\AIBot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\ArduinoMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\ArduinoMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Definitions.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Definitions.cuh||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\ArduinoMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Postprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Postprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\TensorRTInferenceEngine .cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\TensorRTInferenceEngine .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\InferenceContext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\InferenceContext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\InferenceContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\InferenceContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\AIBotConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\AIBotConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Common.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\Common.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\OffsetUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\OffsetUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\skCrypter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\skCrypter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\Obfuscations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Filesystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\Filesystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\CudaDebug.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\CudaDebug.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Preprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Preprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\ArduinoMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Filesystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,28 +87,8 @@
       "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\IMouseController .h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Postprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Definitions.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Definitions.cuh||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Postprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\WindowsMouseController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\Obfuscations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\skCrypter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\skCrypter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\TextureMapper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -87,28 +131,8 @@
       "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\WindowsMouseController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Preprocessor.cuh||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\YOLOv8Preprocessor.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\Filesystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\Filesystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\DesktopTextureCapturer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\CudaDebug.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\CudaDebug.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29D480CC-7535-4197-9AEE-6A3DF0A9F934}|AIBot\\AIBot.vcxproj|solutionrelative:AIBot\\TensorRTInferenceEngine .cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,82 +142,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ArduinoMouseController.h",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.h",
-              "RelativeDocumentMoniker": "AIBot\\ArduinoMouseController.h",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.h",
-              "RelativeToolTip": "AIBot\\ArduinoMouseController.h",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADAAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "InferenceContext.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\InferenceContext.h",
+              "RelativeDocumentMoniker": "AIBot\\InferenceContext.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\InferenceContext.h",
+              "RelativeToolTip": "AIBot\\InferenceContext.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-14T16:26:40.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ArduinoMouseController.cpp",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.cpp",
-              "RelativeDocumentMoniker": "AIBot\\ArduinoMouseController.cpp",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.cpp",
-              "RelativeToolTip": "AIBot\\ArduinoMouseController.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-14T16:26:58.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.cpp",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\main.cpp",
-              "RelativeDocumentMoniker": "AIBot\\main.cpp",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\main.cpp",
-              "RelativeToolTip": "AIBot\\main.cpp",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-14T16:17:47.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WindowsMouseController.cpp",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp",
-              "RelativeDocumentMoniker": "AIBot\\WindowsMouseController.cpp",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp",
-              "RelativeToolTip": "AIBot\\WindowsMouseController.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-14T16:21:07.824Z",
+              "WhenOpened": "2025-04-17T02:41:41.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "YOLOv8Definitions.cuh",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Definitions.cuh",
-              "RelativeDocumentMoniker": "AIBot\\YOLOv8Definitions.cuh",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Definitions.cuh",
-              "RelativeToolTip": "AIBot\\YOLOv8Definitions.cuh",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-14T15:48:09.768Z",
+              "Title": "TensorRTInferenceEngine .h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .h",
+              "RelativeDocumentMoniker": "AIBot\\TensorRTInferenceEngine .h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .h",
+              "RelativeToolTip": "AIBot\\TensorRTInferenceEngine .h",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-16T15:43:03.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "TensorRTInferenceEngine .cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .cpp",
+              "RelativeDocumentMoniker": "AIBot\\TensorRTInferenceEngine .cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .cpp",
+              "RelativeToolTip": "AIBot\\TensorRTInferenceEngine .cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwvy4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T08:27:32.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "YOLOv8Postprocessor.cu",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cu",
               "RelativeDocumentMoniker": "AIBot\\YOLOv8Postprocessor.cu",
               "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cu",
               "RelativeToolTip": "AIBot\\YOLOv8Postprocessor.cu",
-              "ViewState": "AgIAAG8AAAAAAAAAAADwv38AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv0YAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-04-14T15:47:31.071Z",
               "EditorCaption": ""
@@ -201,32 +199,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Filesystem.h",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.h",
-              "RelativeDocumentMoniker": "AIBot\\Filesystem.h",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.h",
-              "RelativeToolTip": "AIBot\\Filesystem.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-12T08:27:40.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IMouseController .h",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h",
-              "RelativeDocumentMoniker": "AIBot\\IMouseController .h",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h",
-              "RelativeToolTip": "AIBot\\IMouseController .h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-14T16:17:44.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "YOLOv8Postprocessor.cuh",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Postprocessor.cuh",
               "RelativeDocumentMoniker": "AIBot\\YOLOv8Postprocessor.cuh",
@@ -239,20 +211,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YOLOv8Definitions.cuh",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Definitions.cuh",
+              "RelativeDocumentMoniker": "AIBot\\YOLOv8Definitions.cuh",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Definitions.cuh",
+              "RelativeToolTip": "AIBot\\YOLOv8Definitions.cuh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-14T15:48:09.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\main.cpp",
+              "RelativeDocumentMoniker": "AIBot\\main.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\main.cpp",
+              "RelativeToolTip": "AIBot\\main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-14T16:17:47.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArduinoMouseController.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.cpp",
+              "RelativeDocumentMoniker": "AIBot\\ArduinoMouseController.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.cpp",
+              "RelativeToolTip": "AIBot\\ArduinoMouseController.cpp",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvzYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-14T16:26:58.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InferenceContext.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\InferenceContext.cpp",
+              "RelativeDocumentMoniker": "AIBot\\InferenceContext.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\InferenceContext.cpp",
+              "RelativeToolTip": "AIBot\\InferenceContext.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-17T02:41:58.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Obfuscations.h",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h",
-              "RelativeDocumentMoniker": "AIBot\\Obfuscations.h",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h",
-              "RelativeToolTip": "AIBot\\Obfuscations.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Title": "AIBotConfig.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\AIBotConfig.h",
+              "RelativeDocumentMoniker": "AIBot\\AIBotConfig.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\AIBotConfig.h",
+              "RelativeToolTip": "AIBot\\AIBotConfig.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-14T16:35:19.737Z",
+              "WhenOpened": "2025-04-17T05:59:32.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Common.hpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Common.hpp",
+              "RelativeDocumentMoniker": "AIBot\\Common.hpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Common.hpp",
+              "RelativeToolTip": "AIBot\\Common.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-16T16:18:48.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OffsetUtils.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\OffsetUtils.h",
+              "RelativeDocumentMoniker": "AIBot\\OffsetUtils.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\OffsetUtils.h",
+              "RelativeToolTip": "AIBot\\OffsetUtils.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-16T16:22:32.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "skCrypter.h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\skCrypter.h",
               "RelativeDocumentMoniker": "AIBot\\skCrypter.h",
@@ -265,7 +315,121 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
+              "Title": "Filesystem.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.cpp",
+              "RelativeDocumentMoniker": "AIBot\\Filesystem.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.cpp",
+              "RelativeToolTip": "AIBot\\Filesystem.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T08:27:39.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CudaDebug.hpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\CudaDebug.hpp",
+              "RelativeDocumentMoniker": "AIBot\\CudaDebug.hpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\CudaDebug.hpp",
+              "RelativeToolTip": "AIBot\\CudaDebug.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-12T08:27:32.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Obfuscations.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h",
+              "RelativeDocumentMoniker": "AIBot\\Obfuscations.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Obfuscations.h",
+              "RelativeToolTip": "AIBot\\Obfuscations.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-14T16:35:19.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "YOLOv8Preprocessor.cuh",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cuh",
+              "RelativeDocumentMoniker": "AIBot\\YOLOv8Preprocessor.cuh",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cuh",
+              "RelativeToolTip": "AIBot\\YOLOv8Preprocessor.cuh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-14T15:46:01.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "YOLOv8Preprocessor.cu",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cu",
+              "RelativeDocumentMoniker": "AIBot\\YOLOv8Preprocessor.cu",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cu",
+              "RelativeToolTip": "AIBot\\YOLOv8Preprocessor.cu",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-14T15:46:22.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ArduinoMouseController.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.h",
+              "RelativeDocumentMoniker": "AIBot\\ArduinoMouseController.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\ArduinoMouseController.h",
+              "RelativeToolTip": "AIBot\\ArduinoMouseController.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-14T16:26:40.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IMouseController .h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h",
+              "RelativeDocumentMoniker": "AIBot\\IMouseController .h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\IMouseController .h",
+              "RelativeToolTip": "AIBot\\IMouseController .h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-14T16:17:44.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Filesystem.h",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.h",
+              "RelativeDocumentMoniker": "AIBot\\Filesystem.h",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.h",
+              "RelativeToolTip": "AIBot\\Filesystem.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-12T08:27:40.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WindowsMouseController.cpp",
+              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp",
+              "RelativeDocumentMoniker": "AIBot\\WindowsMouseController.cpp",
+              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.cpp",
+              "RelativeToolTip": "AIBot\\WindowsMouseController.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-14T16:21:07.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "TextureMapper.cpp",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TextureMapper.cpp",
               "RelativeDocumentMoniker": "AIBot\\TextureMapper.cpp",
@@ -273,12 +437,11 @@
               "RelativeToolTip": "AIBot\\TextureMapper.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAADwvxYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-14T16:36:08.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T16:36:08.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "TrackingAlgorithm .h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TrackingAlgorithm .h",
               "RelativeDocumentMoniker": "AIBot\\TrackingAlgorithm .h",
@@ -290,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "ProportionalTrackingAlgorithm.h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\ProportionalTrackingAlgorithm.h",
               "RelativeDocumentMoniker": "AIBot\\ProportionalTrackingAlgorithm.h",
@@ -302,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "ProportionalTrackingAlgorithm.cpp",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\ProportionalTrackingAlgorithm.cpp",
               "RelativeDocumentMoniker": "AIBot\\ProportionalTrackingAlgorithm.cpp",
@@ -314,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "PIDTrackingAlgorithm.h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\PIDTrackingAlgorithm.h",
               "RelativeDocumentMoniker": "AIBot\\PIDTrackingAlgorithm.h",
@@ -326,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "PIDTrackingAlgorithm.cpp",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\PIDTrackingAlgorithm.cpp",
               "RelativeDocumentMoniker": "AIBot\\PIDTrackingAlgorithm.cpp",
@@ -338,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "TextureMapper.h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TextureMapper.h",
               "RelativeDocumentMoniker": "AIBot\\TextureMapper.h",
@@ -350,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "LogiMouseController.h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\LogiMouseController.h",
               "RelativeDocumentMoniker": "AIBot\\LogiMouseController.h",
@@ -362,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "WindowsMouseController.h",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\WindowsMouseController.h",
               "RelativeDocumentMoniker": "AIBot\\WindowsMouseController.h",
@@ -374,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "Matrix2D.hpp",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Matrix2D.hpp",
               "RelativeDocumentMoniker": "AIBot\\Matrix2D.hpp",
@@ -386,67 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "YOLOv8Preprocessor.cu",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cu",
-              "RelativeDocumentMoniker": "AIBot\\YOLOv8Preprocessor.cu",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cu",
-              "RelativeToolTip": "AIBot\\YOLOv8Preprocessor.cu",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-14T15:46:22.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "YOLOv8Preprocessor.cuh",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cuh",
-              "RelativeDocumentMoniker": "AIBot\\YOLOv8Preprocessor.cuh",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\YOLOv8Preprocessor.cuh",
-              "RelativeToolTip": "AIBot\\YOLOv8Preprocessor.cuh",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-14T15:46:01.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Filesystem.cpp",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.cpp",
-              "RelativeDocumentMoniker": "AIBot\\Filesystem.cpp",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\Filesystem.cpp",
-              "RelativeToolTip": "AIBot\\Filesystem.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-12T08:27:39.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CudaDebug.hpp",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\CudaDebug.hpp",
-              "RelativeDocumentMoniker": "AIBot\\CudaDebug.hpp",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\CudaDebug.hpp",
-              "RelativeToolTip": "AIBot\\CudaDebug.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-12T08:27:32.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TensorRTInferenceEngine .cpp",
-              "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .cpp",
-              "RelativeDocumentMoniker": "AIBot\\TensorRTInferenceEngine .cpp",
-              "ToolTip": "E:\\VS\\new\\AIBot\\AIBot\\TensorRTInferenceEngine .cpp",
-              "RelativeToolTip": "AIBot\\TensorRTInferenceEngine .cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-12T08:27:32.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "DesktopTextureCapturer.cpp",
               "DocumentMoniker": "E:\\VS\\new\\AIBot\\AIBot\\DesktopTextureCapturer.cpp",
               "RelativeDocumentMoniker": "AIBot\\DesktopTextureCapturer.cpp",

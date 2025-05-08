@@ -127,21 +127,96 @@ bool TensorRTInferenceEngine::Initialize(const std::string& enginePath)
             m_outputs.emplace_back(binding);
         }
     }
+
+    for (int i = 0; i < 10; i++) {
+        for (auto& bindings : m_inputs) {
+            size_t size = bindings.total_bytes;
+            void* h_ptr = malloc(size);
+            memset(h_ptr, 0, size);
+            CUDA_CHECK(cudaMemcpyAsync(bindings.d_ptr, h_ptr, size, cudaMemcpyHostToDevice, m_Stream));
+            free(h_ptr);
+        }
+        InferInternal();
+    }
 }
 
 
-void TensorRTInferenceEngine::Infer(void* inputCudaPtr)
+void TensorRTInferenceEngine::Infer(const std::vector<void*>& d_inputPtrs)
+{
+    assert(m_inputs.size() == d_inputPtrs.size()); // only support one dims
+    
+    for (int idx = 0; idx < m_inputs.size(); ++idx) {
+        size_t isize = m_inputs[idx].total_bytes;
+        CUDA_CHECK(cudaMemcpy(m_inputs[idx].d_ptr, d_inputPtrs[idx], isize, cudaMemcpyDeviceToDevice));
+    }
+
+    InferInternal();
+
+    // copy data from gpu memory to memeory host 
+    for (auto& bindings : m_outputs) {
+        size_t osize = bindings.total_bytes;
+        CUDA_CHECK(cudaMemcpy(
+            bindings.h_ptr, bindings.d_ptr, osize, cudaMemcpyDeviceToHost));
+    }
+}
+
+void TensorRTInferenceEngine::CopyInputsToCuda(const std::vector<void*>& h_ptrs)
+{
+    std::vector<void*> d_temp_ptrs;
+    bool customInput = false;
+    if (h_ptrs.size() != m_inputs.size()) customInput = true;
+
+    for (int idx = 0; idx < m_inputs.size(); ++idx) {
+        cudaMemcpy(m_inputs[idx].d_ptr, customInput ? h_ptrs[idx] : m_inputs[idx].h_ptr, m_inputs[idx].total_bytes, cudaMemcpyHostToDevice);
+    }
+}
+
+void TensorRTInferenceEngine::CopyOutputsToCpu(const std::vector<void*>& h_ptrs)
+{
+    bool customOutput = false;
+    if (h_ptrs.size() != m_outputs.size()) customOutput = true;
+
+    for (int idx = 0; idx < m_outputs.size(); ++idx) {
+        cudaMemcpy(m_outputs[idx].d_ptr, customOutput ? h_ptrs[idx] : m_outputs[idx].d_ptr, m_outputs[idx].total_bytes, cudaMemcpyDeviceToHost);
+    }
+}
+
+void TensorRTInferenceEngine::MakePipe()
+{
+    for (auto& bindings : m_inputs) {
+        void* d_ptr;
+        CUDA_CHECK(cudaMallocAsync(&d_ptr, bindings.total_bytes, m_Stream));
+        bindings.d_ptr = d_ptr;
+        
+#ifdef TRT_10
+        auto name = bindings.name.c_str();
+        m_Context->setInputShape(name, bindings.dims);
+        m_Context->setTensorAddress(name, d_ptr);
+#endif
+    }
+
+    for (auto& bindings : m_outputs) {
+        void* d_ptr, * h_ptr;
+        size_t size = bindings.total_bytes;
+        CUDA_CHECK(cudaMallocAsync(&d_ptr, size, m_Stream));
+        CUDA_CHECK(cudaHostAlloc(&h_ptr, size, 0));
+        bindings.d_ptr = d_ptr;
+        bindings.h_ptr = d_ptr;
+
+#ifdef TRT_10
+        auto name = bindings.name.c_str();
+        m_Context->setTensorAddress(name, d_ptr);
+#endif
+    }
+}
+
+void TensorRTInferenceEngine::InferInternal()
 {
 #ifdef TRT_10
-    this->m_Context->enqueueV3(m_Stream);
+    m_Context->enqueueV3(m_Stream);
 #else
-    this->context->enqueueV2(this->device_ptrs.data(), this->stream, nullptr);
+    //m_Context->enqueueV2(d_inputPtrs.data(), m_Stream, nullptr); // error usage
 #endif
-  /*  for (int i = 0; i < this->num_outputs; i++) {
-        size_t osize = this->output_bindings[i].size * this->output_bindings[i].dsize;
-        CUDA_CHECK(cudaMemcpyAsync(
-            this->host_ptrs[i], this->device_ptrs[i + this->num_inputs], osize, cudaMemcpyDeviceToHost, m_Stream));
-    }*/
     cudaStreamSynchronize(m_Stream);
 }
 
